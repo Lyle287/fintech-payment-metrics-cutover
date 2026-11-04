@@ -1,0 +1,21 @@
+{
+  "name": "fintech-payment-metrics-cutover",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/payment_metrics_service.ts",
+    "test": "node --experimental-strip-types --test test/payment_decision.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=22.18"
+  }
+}
